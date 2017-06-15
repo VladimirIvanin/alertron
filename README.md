@@ -15,6 +15,12 @@
 
 ```js
 var myAlert = new Alertron({
-  expires: 2
+  expires: 2,
+  onOpened: function () {
+    console.log('Панель открыта');
+  }, 
+  onClosed: function () {
+    console.log('Панель закрыта');
+  }
 });
 ```
